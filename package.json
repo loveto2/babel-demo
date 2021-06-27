@@ -1,0 +1,27 @@
+{
+  "name": "babel-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "miss-candy-girl <846471465@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/main.js -o lib/main.js",
+    "build:1": "babel src/main.js --config-file ./babel.config-1.js -o lib/main-1.js",
+    "build:2": "babel src/main-2.js --config-file ./babel.config-1.js -o  -o lib/main-2.js",
+    "build:3": "babel src/main-3.js --config-file ./babel.config-1.js -o  -o lib/main-3.js",
+    "build:4": "babel src/main-1.js --config-file ./babel.config-4.js -o lib/main-4.js",
+    "build:5": "babel src/main.js --config-file ./babel.config-5.js -o lib/main-5.js",
+    "build:6": "babel src/main.js --config-file ./babel.config-6.js -o  -o lib/main-6js",
+    "build:7": "babel src/main.js --config-file ./babel.config-7.js -o  -o lib/main-7.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.14.7",
+    "core-js": "3.15"
+  }
+}
